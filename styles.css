@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #cfffca; /* Verde pastel */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .h1 {
+    color: #42ab49;
+  }
+
+  .message-box {
+    background-color: #a5eea0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px #0a0a0a;
+    text-align: center;
+    position: relative; /* Asegura que el cuadro de texto tenga una posición relativa */
+    z-index: 1; /* Asegura que el cuadro de texto esté por encima de la imagen */
+  }
+  
+  h1 {
+    color: #42ab49; /* Verde pastel */
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    background-color: #77dd77; /* Verde pastel */
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .botonSi:hover, .botonNo:hover {
+    background-color: #5dc460; /* Verde pastel más oscuro */
+  }
+
+  .imagen-flotante {
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: -140px; /* Ajusta la posición vertical según sea necesario */
+    left: 50%; /* Ajusta la posición horizontal según sea necesario */
+    transform: translateX(-50%); /* Centra la imagen horizontalmente */
+    width: 170px; /* Ajusta el ancho según sea necesario */
+    height: 170px; /* Ajusta la altura según sea necesario */
+    background-size: cover;
+    border-radius: 10px;
+    z-index: 2; /* Asegura que la imagen esté encima del cuadro de texto */
+  }
